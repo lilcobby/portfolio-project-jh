@@ -1,0 +1,68 @@
+/* flex box styling for all elemnents. dynamic sizing */
+* {
+  background-color: rgb(23, 112, 90);
+  color: rgb(13, 216, 74);
+}
+#page-head h1 {
+  font-size: 50px;
+
+  margin: 10px;
+  text-align: center;
+  background-color: blueviolet;
+  border: 10px solid rgb(84, 3, 92);
+}
+.Jump-to ul {
+  padding: 20px;
+  margin: 10px;
+  border: 10px solid black;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.subheader {
+  font-size: 25px;
+  border: 5px solid black;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+
+section {
+  border: 5px solid black;
+}
+
+.Contact-Information ul {
+  list-style-type: none;
+}
+
+/* .subheader
+
+#subtitle
+
+header
+
+h1
+   
+
+
+h2
+
+.Jump-to 
+
+ul
+
+li
+
+main
+
+.About-Me
+
+.My-Projects
+
+/* need help styling the images or background images if i go that route */
+
+/* .Contact-Information
+
+#Contact .li; */
