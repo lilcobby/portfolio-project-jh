@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
   </head>
   <body>
-    <header>
-      <h1 id="page-head">A Skeleton Portfolio for Jacob Hairfield</h1>
+    <header class="header">
+      <h1>A Skeleton Portfolio for Jacob Hairfield</h1>
       <nav>
         <ul class="Jump-to">
           <a href="#About-Me"> About Me</a>
@@ -18,61 +18,76 @@
           <a href="#Contact-Information">Contact Info</a>
         </ul>
       </nav>
+      </header>
       <div class="subheader">
         <p id="subtitle">
-          Work in progress. Hover over images to see what they are.
+          WORK IN PROGRESS. Hover over images to see what they are.
         </p>
       </div>
     </header>
 
-    <main>
-      <section>
-        <header id="About-Me">About Me</header>
+    <aside id="About-Me">
+        
+        <img src="./assets/images/65115206_10216266979521817_8966192826849165312_n (2).jpg" class="profile-pic">
+        <header class="About-Title">About Me</header>
+       
         <p>
           My name is Jacob Hairfield. I am a beginner programmer with some
           knowledge of python, JavaScript, CSS, and HTML. I don't have many
           projects, yet, but my collecction is growing. A few things about me
           are the following: Dark mode everything, I rarely eat breakfast, I
           like to listen to ambient music or classical when working on my
-          projects, and I'm definitely a "night person."
+          projects, I'm definitely a "night person, and I like Halo."
         </p>
-      </section>
-      <!-- mneed image headers or text over the image  -->
+    </aside>
+
+
+    <!-- hover over 3 and 4 txt says links to github, not enough projects yet -->
+     <main>
       <section id="My-Projects">
         <h2>My Projects</h2>
-        <!-- need to add alts and size the images in css -->
-        <ul id="flexbox-projects">
+        
+        <div class="flexbox-projects">
           <header>Project 1</header>
 
-          <a href="https://github.com/lilcobby/reprocess-challenge-jh">
-            <img src="./assets/images/1685792301973812.jpg" class="big" />
+          <a href="https://lilcobby.github.io/reprocess-challenge-jh/">
+            <img src="./assets/images/1631937037549.png" class="big" />
           </a>
-
+        </div>
+        <div class="small">
           <header>Project 2</header>
-          <a href="https://github.com/lilcobby/prework-study-guide-redux">
+          <a href="https://lilcobby.github.io/prework-study-guide-redux/">
             <img src="./assets/images/placeholder.png" />
           </a>
-
+        </div>
+        <div class="small">
           <header>Project 3</header>
           <a href="https://github.com/lilcobby">
             <img src="./assets/images/placeholder.png" />
           </a>
-
+          </div>
+          <div class="small">
           <header>Project 4</header>
           <a href="https://github.com/lilcobby">
             <img src="./assets/images/placeholder.png" />
           </a>
-        </ul>
+        </div>
       </section>
+      </main>
+
       <!-- add phone number, email link, and github link  -->
-      <section>
-        <h2 id="Contact-Information">Contact Information</h2>
-        <ul id="Contact">
-          <li>phone number</li>
-          <li>email</li>
-          <li>github</li>
+    <footer class="footer">
+        <h2>Contact Information</h2>
+        <ul id="Contact-Information">
+          <!-- make a hover for phone number that says no no no private info. -->
+          <li>phone number: 804-XXX-XXXX</li>
+          <!-- Hover "you can have this though" -->
+          <li>email: jshairfield13@gmail.com</li>
+          <li>
+            <a href="https://github.com/"> My Github Profile</a>
+          </li>
         </ul>
       </section>
-    </main>
+   
   </body>
 </html>
