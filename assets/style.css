@@ -3,66 +3,77 @@
   background-color: rgb(23, 112, 90);
   color: rgb(13, 216, 74);
 }
-#page-head h1 {
-  font-size: 50px;
-
+p {
   margin: 10px;
+}
+
+#page-head {
+  font-size: 50px;
+  width: 1500px;
+  height: 100px;
+  margin: auto;
   text-align: center;
   background-color: blueviolet;
   border: 10px solid rgb(84, 3, 92);
 }
-.Jump-to ul {
+.Jump-to {
   padding: 20px;
   margin: 10px;
-  border: 10px solid black;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  border: 5px solid black;
+  width: fit-content;
+  flex-direction: column;
 }
 
 .subheader {
   font-size: 25px;
   border: 5px solid black;
-  width: fit-content;
-  display: flex;
-  justify-content: flex-end;
+  text-wrap: wrap;
+  width: 500px;
+
+  float: right;
 }
 
 section {
   border: 5px solid black;
+  width: 500px;
 }
 
-.Contact-Information ul {
-  list-style-type: none;
+#Contact-Information {
+  width: 300px;
+  margin: auto;
+}
+#About-Me {
+  text-align: center;
 }
 
-/* .subheader
+#My-Projects {
+  width: 1000px;
+  text-align: center;
+}
+#flexbox-projects {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+}
+#flexbox-projects header {
+  position: absolute;
+}
 
-#subtitle
+img {
+  width: 200px;
+}
 
-header
-
-h1
-   
-
-
-h2
-
-.Jump-to 
-
-ul
-
-li
-
-main
-
-.About-Me
-
-.My-Projects
-
-/* need help styling the images or background images if i go that route */
-
-/* .Contact-Information
-
-#Contact .li; */
+.big {
+  width: 800px;
+}
+/* text box hover for project titles */
+/* section header {
+  display: none;
+  position: relative 
+}
+section a:hover {
+display: block;
+color:rgb(13, 216, 74);
+position: absolute; 
+} */
