@@ -46,7 +46,7 @@ a {
 }
 /* end subheader */
 
-/* start about main aside */
+/* start main, aside */
 .profile-pic {
   width: 100px;
   border-radius: 50%;
@@ -58,8 +58,6 @@ a {
   padding: 10px;
   margin: 20px;
   border: solid black;
-  /* display: flex;
-  flex-direction: column; */
   flex-shrink: 0;
 }
 .About-Title {
@@ -72,29 +70,25 @@ a {
 
 #My-Projects {
   border: solid black;
-  /* width: 1000px;
-  height: 1200px; */
   position: relative;
-  /* left: 200px;
-  top: 10px; */
-  /* display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  flex-shrink: 0; */
+ 
   flex: 2
+}
+.instruction {
+  text-align: center;
+  font-size: 20px;
 }
 h2{
   text-align: center;
 }
 
-/* check this flex shit is it main or section */
+/* flex main */
 main {
   display: flex;
   justify-content: center;
 }
 
-/* start main */
+
 
 h2 {
   font-size: 40px;
@@ -103,25 +97,32 @@ main header {
   font-size: 20px;
 }
 .big {
-  width: 600px;
+  width: 580px;
   height: 400px;
   position: relative;
+  opacity: 70%;
 }
 
 .small img {
   width: 200px;
+ 
 }
+/* end main */
 
 /* hover for description on titles */
 .hidden {
   display: none;
+ 
 }
 .hover:hover + .hidden {
-  display: inline-block;
-  height: 50px;
-  color: red;
-  position: absolute;
+display: inline-block;
+left: 10px;
+background-color: black;
+border: solid blueviolet 5px;
+color: white;
+position: absolute;
 }
+/* small screen css */
 @media screen and (max-width: 1500px){
   .subheader{
     display: none;
@@ -139,91 +140,14 @@ main header {
   }
   #About-Me{
     order: 2;
-    width: 100vw;
+    width: 80vw;
   }
   #My-Projects{
-    
+    width: 100vw;
+  }
+  .big{
+   width:  90vw;
   }
  
   
 
-/* initialize main with flexbox */
-
-/* * {
-  background-color: rgb(23, 112, 90);
-  color: rgb(13, 216, 74);
-}
-p {
-  margin: 10px;
-}
-
-#page-head {
-  font-size: 50px;
-  width: 1500px;
-  height: 100px;
-  margin: auto;
-  text-align: center;
-  background-color: blueviolet;
-  border: 10px solid rgb(84, 3, 92);
-}
-.Jump-to {
-  padding: 20px;
-  margin: 10px;
-  border: 5px solid black;
-  width: fit-content;
-  flex-direction: column;
-}
-
-.subheader {
-  font-size: 25px;
-  border: 5px solid black;
-  text-wrap: wrap;
-  width: 500px;
-
-  float: right;
-}
-
-section {
-  border: 5px solid black;
-  width: 500px;
-}
-
-#Contact-Information {
-  width: 300px;
-  margin: auto;
-}
-#About-Me {
-  text-align: center;
-}
-
-#My-Projects {
-  width: 1000px;
-  text-align: center;
-}
-#flexbox-projects {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: space-around;
-}
-#flexbox-projects header {
-  position: absolute;
-}
-
-img {
-  width: 200px;
-}
-
-.big {
-  width: 800px;
-} */
-/* text box hover for project titles */
-/* section header {
-  display: none;
-  position: relative 
-}
-section a:hover {
-display: block;
-color:rgb(13, 216, 74);
-position: absolute; 
-} */
