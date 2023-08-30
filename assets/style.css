@@ -3,7 +3,6 @@
   border: solid black;
   display: flex;
   height: 100px;
-  flex-flow: column;
   justify-content: center;
   align-items: center;
 }
@@ -17,18 +16,22 @@ h1 {
 nav {
   border: solid black;
   margin: 0;
-  align-self: flex-end;
+ 
 }
 
 .Jump-to {
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 10px;
   font-size: 20px;
+
+  display: flex;
+  justify-content: flex-start;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
+  padding: 10px;
 }
 /* end header */
 
@@ -39,10 +42,11 @@ a {
   float: right;
   padding: 10px;
   margin: 20px;
+  text-align: center;
 }
 /* end subheader */
 
-/* start about me aside */
+/* start about main aside */
 .profile-pic {
   width: 100px;
   border-radius: 50%;
@@ -54,34 +58,44 @@ a {
   padding: 10px;
   margin: 20px;
   border: solid black;
+  /* display: flex;
+  flex-direction: column; */
+  flex-shrink: 0;
 }
 .About-Title {
   position: relative;
   left: 20px;
   font-size: 40px;
 }
+
 /* end aside */
 
 #My-Projects {
   border: solid black;
-  width: 1000px;
-  height: 1000px;
+  /* width: 1000px;
+  height: 1200px; */
   position: relative;
-  left: 400px;
-  bottom: 500px;
-  display: flex;
+  /* left: 200px;
+  top: 10px; */
+  /* display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  flex-shrink: 0; */
+  flex: 2
+}
+h2{
+  text-align: center;
 }
 
 /* check this flex shit is it main or section */
 main {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 /* start main */
+
 h2 {
   font-size: 40px;
 }
@@ -90,11 +104,49 @@ main header {
 }
 .big {
   width: 600px;
+  height: 400px;
+  position: relative;
 }
 
 .small img {
   width: 200px;
 }
+
+/* hover for description on titles */
+.hidden {
+  display: none;
+}
+.hover:hover + .hidden {
+  display: inline-block;
+  height: 50px;
+  color: red;
+  position: absolute;
+}
+@media screen and (max-width: 1500px){
+  .subheader{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 768px){
+  
+  
+  main {
+    display: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   
+  }
+  #About-Me{
+    order: 2;
+    width: 100vw;
+  }
+  #My-Projects{
+    
+  }
+ 
+  
+
 /* initialize main with flexbox */
 
 /* * {

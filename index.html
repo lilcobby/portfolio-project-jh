@@ -9,7 +9,8 @@
   <body>
     <header class="header">
       <h1>A Skeleton Portfolio for Jacob Hairfield</h1>
-      <nav>
+    </header>
+    <nav>
         <ul class="Jump-to">
           <a href="#About-Me"> About Me</a>
 
@@ -17,15 +18,15 @@
 
           <a href="#Contact-Information">Contact Info</a>
         </ul>
-      </nav>
-      </header>
-      <div class="subheader">
+    </nav>
+      
+    <div class="subheader">
         <p id="subtitle">
-          WORK IN PROGRESS. Hover over images to see what they are.
+          WORK IN PROGRESS. Hover over image titles to see what they are.
         </p>
-      </div>
-    </header>
-
+    </div>
+    
+    <main>
     <aside id="About-Me">
         
         <img src="./assets/images/65115206_10216266979521817_8966192826849165312_n (2).jpg" class="profile-pic">
@@ -43,36 +44,42 @@
 
 
     <!-- hover over 3 and 4 txt says links to github, not enough projects yet -->
-     <main>
+     <!-- <main> -->
       <section id="My-Projects">
         <h2>My Projects</h2>
         
         <div class="flexbox-projects">
-          <header>Project 1</header>
+          <header class="hover">Project 1</header>
+          <p class="hidden"> Project 1 was challenge 1 to reprocess old code into a more modern and accessible format</p>
 
           <a href="https://lilcobby.github.io/reprocess-challenge-jh/">
             <img src="./assets/images/1631937037549.png" class="big" />
           </a>
-        </div>
+       
+          </div>
         <div class="small">
-          <header>Project 2</header>
+          <header class="hover">Project 2</header>
+          <p class="hidden">Project 2 is my prework study guide page, my first webpage</p>
           <a href="https://lilcobby.github.io/prework-study-guide-redux/">
             <img src="./assets/images/placeholder.png" />
           </a>
         </div>
         <div class="small">
-          <header>Project 3</header>
+          <header class="hover">Project 3</header>
+          <p class="hidden">Project 3 is just a placeholder for now and will link to my github profile page</p>
           <a href="https://github.com/lilcobby">
             <img src="./assets/images/placeholder.png" />
           </a>
           </div>
           <div class="small">
-          <header>Project 4</header>
+          <header class="hover">Project 4</header>
+          <p class="hidden">Project 4 is just a placeholder for now and will link to my github profile page</p>
           <a href="https://github.com/lilcobby">
             <img src="./assets/images/placeholder.png" />
           </a>
         </div>
       </section>
+     
       </main>
 
       <!-- add phone number, email link, and github link  -->
@@ -88,6 +95,6 @@
           </li>
         </ul>
       </section>
-   
+    
   </body>
 </html>
