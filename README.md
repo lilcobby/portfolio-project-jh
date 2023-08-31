@@ -9,5 +9,6 @@ Screenshot below:
 ![image](https://github.com/lilcobby/portfolio-project-jh/assets/141507048/7ccdbb18-4482-4ac0-8eb2-4db956dda2bf)
 
 
-links to my project and my github repo below: 
+links to my project on github below: 
+https://lilcobby.github.io/portfolio-project-jh/
 
