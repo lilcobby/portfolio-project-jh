@@ -157,4 +157,10 @@ main {
   .big {
     width: 90vw;
   }
+  p {
+    font-size: 80%;
+  }
+  h1 {
+    font-size: 150%;
+  }
 }
